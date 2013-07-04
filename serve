@@ -1,0 +1,2 @@
+#!/bin/bash
+http-server web/public -p 80
