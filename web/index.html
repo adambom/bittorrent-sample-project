@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Read the Feed</title>
+        <meta name="description" content="A feed reader for TED Talks">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="public/css/app.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="content"></div>
+        </div>
+
+        <!-- libs -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="src/scripts/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="src/scripts/vendor/lodash/lodash-1.3.1.js"></script>
+        <script src="src/scripts/vendor/backbone/backbone-1.0.0.js"></script>
+
+        <script>window.BIT = {}</script>
+
+        <!-- templates -->
+        <script src="public/js/templates.js"></script>
+
+        <!-- models -->
+        <script src="src/scripts/models/cors-model.js"></script>
+        <script src="src/scripts/models/entry.js"></script>
+        <script src="src/scripts/models/feed.js"></script>
+
+        <!-- collections -->
+        <script src="src/scripts/collections/entries.js"></script>
+
+        <!-- views -->
+        <script src="src/scripts/views/feed-view.js"></script>
+        <script src="src/scripts/views/entry-list-view.js"></script>
+        <script src="src/scripts/views/entry-summary-view.js"></script>
+        <script src="src/scripts/views/entry-detail-view.js"></script>
+
+        <!-- routers -->
+        <script src="src/scripts/routers/main-router.js"></script>
+
+        <!-- App logic -->
+        <script src="src/scripts/app.js"></script>
+
+    </body>
+</html>

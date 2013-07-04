@@ -1,0 +1,29 @@
+<div class="navbar">
+   <div class="navbar-inner">
+        <div class="row-fluid">
+            <div class="span1">
+                <a href="#" class="btn">Go Back</a>
+            </div>
+            <div class="span11">
+                <h2><%= title %></h2>
+                <h5 class="muted"><time datetime="<%= publishedDate %>" pubdate><%= publishedDate %></time>, <%= author %></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="entry-detail">
+
+    <div class="row-fluid">
+        <div class="span5">
+            <video controls poster="<%= mediaGroups[0].contents[0].thumbnails[0].url %>">
+                <source src="<%= mediaGroups[0].contents[0].url %>" type="<%= mediaGroups[0].contents[0].type %>">
+            </video>
+        </div>
+
+        <div class="span7">
+            <p class="lead"><%= content %></p>
+        </div>
+    </div>
+
+    <p>Original link: <a href="<%= link %>" title="<%= title %>"><%= link %></a></p>
+</div>
